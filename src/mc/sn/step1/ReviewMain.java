@@ -14,8 +14,9 @@ public class ReviewMain {
 		
 		//printNumber를 호출하는 코드를 작성하시오
 		//1. 현재 클래스의 인스턴스를 생성한다.
-		
+		ReviewMain pm = new ReviewMain();
 		//2. 생성인스턴스의 변수를 이용하여 printNumber메소드를 호출한다.
+		pm.printNumber();
 	}
 	
 	
