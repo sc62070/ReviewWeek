@@ -1,4 +1,4 @@
-package Test;
+package mc.sn.step4;
 
 //VO(Value Object), DTO(Data Transfer Object), DataBean
 public class Account {

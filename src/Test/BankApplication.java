@@ -1,60 +1,30 @@
-package Test;
+package mc.sn.step4;
 
 import java.util.Scanner;
 
 public class BankApplication {
 	private Account[] accounts;
-	
-	public BankApplication(int size) {
-		accounts = new Account[size];
-	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		BankApplication bank = new BankApplication(10);
-		bank.openBank();
-	}
-	
-	
-	public void openBank() {
-		System.out.println("지금부터 은행업무를 시작합니다.");
-		boolean isClosed = false;
-		Scanner scan = new Scanner(System.in);
-		
-		while(!isClosed) {
-			this.viewMenu();
-			String command = scan.nextLine();
-			if(command.equals("5")) {
-				isClosed = true;
-			} else if(command.equals("1")) {
-				
-			} else if(command.equals("2")) {
-				
-			} else if(command.equals("3")) {
-				this.doposit();
-			} else if(command.equals("4")) {
-				
-			}
-		}
-		scan.close();
-		System.out.println("오늘 은행업무를 종료합니다.");
-	}
-	
-	public void viewMenu() {
-		System.out.println("--------------------------------------------");
-		System.out.println("1.계좌생성|2.계좌조회|3.계좌입금|4.계좌출금|5.업무종료|");
-		System.out.println("--------------------------------------------");
-		System.out.print("선택 >>> ");
-	}
-	
-	public void doposit() {
-		
-	}
-	
-	public Account findAccount(String ano) {
-		
-		return null;
+	public BankApplication() {
+		this.accounts = new Account[10];
 	}
 
-	
-}
+	public static void main(String[] args) {
+		
+	public void openBank() {
+		
+		public void accountList() {
+			//배열에 있는 계좌 객체를 꺼내서 출력
+			for(int i=0;i<accounts.length;i++) {
+				Account temp =accounts[i];
+				System.out.println(temp);
+			}
+		}
+		public void displayMenu() {
+			System.out.println("--------------------------------------");
+			System.out.println("1.계좌생성|2.계좌조회|3.계좌입금|4.계좌출금|5.종료");
+			System.out.println("--------------------------------------");
+			System.out.print("선택 >>> ");
+		}
+		}
+	}
+	}
