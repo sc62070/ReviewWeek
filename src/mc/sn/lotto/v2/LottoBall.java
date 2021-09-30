@@ -1,4 +1,4 @@
-package mc.sn.lotto;
+package mc.sn.lotto.v2;
 
 public class LottoBall {
 	private int ballNumber;

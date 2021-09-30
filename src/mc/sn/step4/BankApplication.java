@@ -1,4 +1,4 @@
-package mc.sn.step4;
+	package mc.sn.step4;
 
 import java.util.Scanner;
 

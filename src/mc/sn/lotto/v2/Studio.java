@@ -1,4 +1,6 @@
-package mc.sn.lotto;
+package mc.sn.lotto.v2;
+
+import java.util.ArrayList;
 
 public class Studio {
 
@@ -10,16 +12,16 @@ public class Studio {
 	}
 	public void onAir() {
 		System.out.println("지금부터 로또 추첨을 시작합니다.");
-		LottoBall[] balls = this.makeBalls();
+		ArrayList<LottoBall> balls = this.makeBalls();
 		LottoMachine machine = new LottoMachine(balls);
 		machine.getBalls(6);
 		System.out.println("감사합니다.");
 	}
-	private LottoBall[] makeBalls() {
-		LottoBall[] balls = null;
-		balls = new LottoBall[45];
+	private ArrayList<LottoBall> makeBalls() {
+		ArrayList<LottoBall> balls = null;
+		balls = new ArrayList<LottoBall>();
 		for(int i=0;i<45;i++) {
-			balls[i] = new LottoBall(i+1);
+			balls.add(new LottoBall(i+1));
 		}
 		
 		return balls;
